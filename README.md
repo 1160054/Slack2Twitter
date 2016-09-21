@@ -10,6 +10,7 @@ SlackのメッセージをTwitterに投稿します。
 ```bash
     % npm install -g hubot coffee-script yo generator-hubot
     % npm install hubot-slack --save
+    % gem install twitter
 ```
 
 こちらで、ボットをローカルで実行できます。XXXXはSlackのApp Integration でHubotから取得してください。
