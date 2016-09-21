@@ -1,7 +1,8 @@
 # Slack2Twitter
 
+SlackBotへのメッセージを、Twitterに投稿します。   
+
 Slack2TwitterはHubotフレームワークでつくったSlack用のボットです。
-SlackのメッセージをTwitterに投稿します。
 
 ## セットアップ
 
