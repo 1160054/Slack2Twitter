@@ -3,7 +3,7 @@
 Slack2TwitterはHubotフレームワークでつくったSlack用のボットです。
 SlackのメッセージをTwitterに投稿します。
 
-### 実行手順
+## セットアップ
 
 ### 必要なモジュール
 
@@ -22,22 +22,21 @@ SlackのメッセージをTwitterに投稿します。
 正常に動いた時、次のように表示されます。
 
 ```bash
-    [Sat Feb 28 2015 12:38:27 GMT+0000 (GMT)] INFO Using default redis on localhost:6379
-    Slack2Twitter>
+    [Sat Feb 28 2015 12:38:27 GMT+0000 (GMT)] INFO Using default redis on localhost:6379 Slack2Twitter>
 ```
 
-### 使い方
+## 使い方
 
-#### 取得
+### 取得
 SlackでBotのダイレクトメッセージを開き、**アンダースコア**を送信
 
-#### 送信（ツイート）
+### 送信（ツイート）
 SlackでBotのダイレクトメッセージを開き、**ツイート本文**を送信
 
-### 編集とカスタマイズ
+## ボットのカスタマイズ
 
 `scripts/example.coffee`をみてください。カスタマイズにはこちらを修正します。
 
 ドキュメントはこちらです
 
-[scripting-docs]: https://github.com/github/hubot/blob/master/docs/scripting.md
+[scripting-docs](https://github.com/github/hubot/blob/master/docs/scripting.md)
