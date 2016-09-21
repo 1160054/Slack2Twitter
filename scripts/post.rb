@@ -16,9 +16,9 @@ class Slack2Twitter
     return if msg[0] == '_'
     puts "-"*50 + "\n送信\n" + "-"*50 + "\n"
     if @client.update(msg)
-      puts "送信\n  #{msg}"
+      puts "完了\n  #{msg}"
     else
-      puts "送信失敗\n  #{msg}"
+      puts "失敗\n  #{msg}"
     end
   end
 
@@ -46,7 +46,7 @@ slack2twitter = Slack2Twitter.new(consumer_key:        ENV['YOUR_CONSUMER_KEY'],
                                   access_token_secret: ENV['YOUR_ACCESS_SECRET'],
                                   twitter_user_id:     ENV['YOUR_TWITTER_USER_ID'])
 
-[:mentions_timeline, :user_timeline].each do |activity_name|
+[:home_timeline, :mentions_timeline, :user_timeline].each do |activity_name|
   slack2twitter.show_activity(activity_name)
 end
 

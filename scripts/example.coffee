@@ -4,7 +4,8 @@ module.exports = (robot) ->
   robot.hear ///#{bot_name}.*///i, (res) ->
     shift_num = bot_name.length + 1
     msg = res.message.text[shift_num..(140+shift_num)]
-    return if msg.match(///.*send.*///i)
+    return if msg.match(///.*because.*///i)
+    console.log("----\n#{res.message.user.name}\n#{msg}\n----")
     child_process.exec "ruby ./scripts/post.rb '#{msg}'", (error, stdout, stderr) ->
       return res.emote "stderr: \n#{stderr}" if stderr
       return res.emote "error:  \n#{error}"  if error
